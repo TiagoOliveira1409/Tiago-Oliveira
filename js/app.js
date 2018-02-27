@@ -19,3 +19,13 @@ $('nav a').click(function(e){
 		scrollTop: targetOfset - menuHeight
 	},500)
 })
+
+$('.conhecame').click(function(e){
+	e.preventDefault();
+	var id = $(this).attr('href');
+	var menuHeight = $('nav').innerHeight();
+	var targetOfset = $(id).offset().top;
+	$('html,body').animate({
+		scrollTop: targetOfset - menuHeight
+	},500)
+})
