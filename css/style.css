@@ -1,6 +1,9 @@
 .menu{
 	background-image: url('../images/circuito.jpg');
 	background-size: cover;
+	position: fixed;
+	z-index: 100;
+	width: 100%;
 }
 .center{
 	text-align: center;
@@ -34,4 +37,16 @@
 .fundobody{
 	background-image: url('../images/metalico.jpg');
 }
+
+.anime{
+	opacity: 0;
+	transform: translate3d(-100px,0,0);
+	transition: .3s;
+}
+
+.anime-start{
+	opacity: 1;
+	transform: translate3d(0,0,0);
+}
+
 

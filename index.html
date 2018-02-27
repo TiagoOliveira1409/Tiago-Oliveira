@@ -7,8 +7,11 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 </head>
 <body class="fundobody">
-	<nav class="menu">
+	<nav class="menu scroll">
 		<ul class="nav justify-content-center">
+			<li class="nav-item">
+				<a href="#inicio" class="nav-link font-weight-bold text-white">Inicio</a>			
+			</li>
 			<li class="nav-item">
 				<a href="#sobre" class="nav-link font-weight-bold text-white">Sobre</a>			
 			</li>
@@ -21,14 +24,14 @@
 		</ul>
 	</nav>
 	<div class="container area1">
-		<div class="jumbotron center">
+		<div id="inicio" class="jumbotron center">
 			<h1>Tiago L P Oliveira</h1>
 			<hr class="my-4" />
 			<p class="lead">Graduando em Ciéncias da Computação.</p>
 			<a class="btn btn-primary conhecame" href="#sobre" role="button">Conheça-me</a>
 		</div>
 	</div>
-	<div class="container area1">
+	<div class="container area1 anime">
 		<div class="jumbotron">
 			<section id="sobre">
 				<h1 class="center">Sobre</h1>
@@ -51,20 +54,15 @@
 			</section>
 		</div>
 	</div>
-	<div id="portifolio" class="container area1">
+	<div id="portifolio" class="container area1 anime">
 		<div class="jumbotron">
 			<h1 class="center">Portifólio</h1>
 			<div class="row">
-				<div class="col-sm-6">
-					<iframe width="cover" height="250" src="https://www.youtube.com/embed/iZ1ucWosOww" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-				</div>
-				<div class="col-sm-6">
-					<iframe width="cover" height="250" src="https://www.youtube.com/embed/iZ1ucWosOww" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-				</div>
+	
 			</div>
 		</div>
 	</div>
-	<div id="contato" class="container area1">
+	<div id="contato" class="container area1 anime">
 		<div class="jumbotron">
 			<h1 class="center">Contato</h1>
 			<form>
@@ -93,5 +91,7 @@
 			Desenvolvido com <span class="text-danger">&hearts;</span> por <span class="dev text-primary"> Curso web</span>.
 		</p>
 	</footer>
+	<script src="js/jquery-3.3.1.js"></script>
+	<script src="js/app.js"></script>
 </body>
 </html>
